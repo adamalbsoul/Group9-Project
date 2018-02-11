@@ -33,11 +33,9 @@ public class EnemyGun : MonoBehaviour
             //set bullet's initial pos
             bullet.transform.position = transform.position;
 
-            //calculate bullet's direction towards the player
-            Vector2 direction = playerChar.transform.position - bullet.transform.position;
 
-            //set bullet direction
-            bullet.GetComponent<EnemyBullet>().SetDirection(direction);
+
+
         }
     }
 }
